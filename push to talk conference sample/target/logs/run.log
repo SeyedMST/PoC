@@ -1,11 +1,11 @@
 0    [main] INFO  KitCAT.Tester  - Running test ConferenceSampleTest
-105  [main] WARN  gov.nist.javax.sip.SipStackImpl  - using default tls security policy
-130  [main] INFO  gov.nist.javax.sip.stack.timers.DefaultSipTimer  - the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been started
-275  [main] INFO  KitCAT.Tester  - running test setup
-275  [main] INFO  KitCAT.Tester  - Running test testCompletedCall
-1722 [main] INFO  KitCAT.Tester  - alice sends INVITE to conf
-1765 [main] INFO  KitCAT.Tracer  - alice -> INVITE
-1767 [main] ERROR KitCAT.Tester  - test failed
+447  [main] WARN  gov.nist.javax.sip.SipStackImpl  - using default tls security policy
+564  [main] INFO  gov.nist.javax.sip.stack.timers.DefaultSipTimer  - the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been started
+53639 [main] INFO  KitCAT.Tester  - running test setup
+63546 [main] INFO  KitCAT.Tester  - Running test testCompletedCall
+115573 [main] INFO  KitCAT.Tester  - alice sends INVITE to conf
+115826 [main] INFO  KitCAT.Tracer  - alice -> INVITE
+119779 [main] ERROR KitCAT.Tester  - test failed
 org.echarts.test.sip.CATException: javax.sip.SipException: Invalid argument (sendto failed)
 	at org.echarts.test.sip.SIPAgentImpl.execUserCommand(SIPAgentImpl.java:275)
 	at org.echarts.test.sip.SIPAgentImpl.call(SIPAgentImpl.java:383)
@@ -56,7 +56,3 @@ Caused by: java.io.IOException: Invalid argument (sendto failed)
 	at gov.nist.javax.sip.stack.SIPClientTransaction.sendMessage(SIPClientTransaction.java:489)
 	at gov.nist.javax.sip.stack.SIPClientTransaction.sendRequest(SIPClientTransaction.java:1036)
 	... 36 more
-1791 [main] INFO  KitCAT.Tester  - running test cleanup
-4794 [main] INFO  gov.nist.javax.sip.stack.timers.DefaultSipTimer  - the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been stopped
-5795 [main] INFO  gov.nist.javax.sip.stack.timers.DefaultSipTimer  - the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been stopped
-6805 [main] INFO  KitCAT.Tester  - ====================
