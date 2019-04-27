@@ -10,6 +10,8 @@ import javax.sql.DataSource;
 
 import att.com.ConferenceSample.*;
 
+
+// خیلی مشخص نیست ولی ظاهرا قراره
 public class sipToJavaNotification {
 	final private String confName;
 	ConferenceSampleMachineToJava toJave;

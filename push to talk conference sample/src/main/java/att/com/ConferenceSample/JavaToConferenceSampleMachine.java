@@ -18,7 +18,7 @@ public class JavaToConferenceSampleMachine extends JavaToEChartsMachine {
      */
     ConferenceSampleControl control;
 
-    // This method is called by the framework immediately after initialization
+    //
     //
     protected void init(TransitionMachine machine) throws Exception {
 	    super.init(machine);

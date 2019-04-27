@@ -2,13 +2,20 @@ package messages;
 
 import finals.MediaServerCommand;
 
+
+// یکی از مهمترین کلاسهای این ماژول
 public class OutLegMessage {
 
+	// آی پی مقصد
 	private final String ip;
+	//پورت مقصد
 	private final int port;
+	// نام کاربری
 	private final String username;
+	// دستوری که تو پیام اومده. این دستور یه enum هست که میتونه ۴ حالت درج و حذف و .. باشه/
 	private final MediaServerCommand msCommand;
-	
+
+	// کانستراکتور کلاس
 	public OutLegMessage(String ip, int port, String username, MediaServerCommand msCommnad ) {
 		super();
 		this.ip = ip;
@@ -17,6 +24,7 @@ public class OutLegMessage {
 		this.username = username;
 	}
 
+	// توابع getter کلاس
 	public String getIp() {
 		return ip;
 	}
@@ -36,6 +44,8 @@ public class OutLegMessage {
 		return getMsCommnad().isLegal();
 	}
 
+	// این تابع از کلاس object اورراید شده.
+	// میاد یه OutLegMessage رو بر اساس همه propertyهاش به یه عدد hash میکنه و اون رو یونیک میکنه.
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -47,6 +57,9 @@ public class OutLegMessage {
 		return result;
 	}
 
+	// این تابع هم از کلاس object اورراید شده.
+	// تک به تک همه پرورتی ها رو چک میکنه که دو تا OutLegMessage مساوی هستند یا نه
+	// تا نتیجه بگیره که اون دو تا مساوین یا نه.
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -68,7 +81,8 @@ public class OutLegMessage {
 		return true;
 	}
 
-	
+
+	// آی پی، پورت و کامند یه پیغام اون پیام رو مشخص میکنن.
 	@Override
 	public String toString() {
 		return "OutLegMessage [ip=" + ip + ", port=" + port + ", msCommnad="

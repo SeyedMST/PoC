@@ -31,6 +31,19 @@ import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
 import com.gargoylesoftware.htmlunit.WebClient;
 
 
+/*
+هدف:
+در این کلاس، هدف، تست یک تماس PoC به صورت کامل است. درواقع باید یک نفر در یک نشست، با وارد کردن
+نام یک chat_room
+درخواست ورود بکند، و بعد سایر افراد نیز به این نشست با درخواست IP و Port اضافه شوند.
+ویژگی‌های پیاده‌سازی شده در کد اولیه:
+به طور خاص هیچ ویژگی در کد اولیه پیاده سازی نشده است. تنها امکان عضویت در
+یک نشست وجود دارد که Ip و Port آن از قبل باید تنظیم شده باشد و امکان نشست‌های
+همزمان وجود ندارد.
+
+ */
+
+
 
 // این کلاس از کلاسهای خود E4ss ارث بری کرده و قابلیتهای اون رو هم اکستند کرده.
 public final class ConferenceSampleMachineTest extends org.echarts.test.sip.CATTestCase {
